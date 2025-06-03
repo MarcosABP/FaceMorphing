@@ -12,43 +12,51 @@ This project was developed as part of the Digital Image Processing course in the
 ## ⚙️ Tecnologias e Bibliotecas | Technologies and Libraries
 
 - Python (Google Colab)
-- OpenCV → Processamento de imagens
-- dlib → Extração dos 68 landmarks faciais
-- NumPy → Manipulação de arrays
-- Matplotlib / Pillow → Visualização de imagens
-- scikit-learn → Cálculo da similaridade de cosseno
+- OpenCV → Processamento de imagens / Image Procesing
+- dlib → Extração dos 68 landmarks faciais / Extraction of 68 facial landmarks
+- NumPy → Manipulação de arrays / Array Manipulation
+- Matplotlib / Pillow → Visualização de imagens / Image Visualisation
+- scikit-learn → Cálculo da similaridade de cosseno / Cosine similarity evaluation
 
 ---
 
 ## 🔍 Etapas do Projeto | Project Steps
 
-1. **Extração de Landmarks**: Uso do modelo `dlib` para obter 68 pontos da face.
-2. **Face Morphing**: Transformações geométricas entre imagens desalinhadas e uma imagem base.
-3. **Pré-processamento**: Normalização, corte e ajuste de cor.
-4. **Avaliação**: Cálculo da similaridade de cosseno entre imagens alinhadas e a imagem de referência.
-5. **Análise de Regiões**: Verificação do impacto de diferentes regiões (olhos, boca, etc.) no reconhecimento facial.
+1. **Extração de Landmarks**: Uso do modelo `dlib` para obter 68 pontos da face.  
+   **Landmark Extraction**: Using the `dlib` model to obtain 68 facial points.
+
+2. **Face Morphing**: Transformações geométricas entre imagens desalinhadas e uma imagem base.  
+   **Face Morphing**: Geometric transformations between misaligned images and a base image.
+
+3. **Pré-processamento**: Normalização, corte e ajuste de cor.  
+   **Preprocessing**: Normalization, cropping, and color adjustment.
+
+4. **Avaliação**: Cálculo da similaridade de cosseno entre imagens alinhadas e a imagem de referência.  
+   **Evaluation**: Calculation of cosine similarity between aligned images and the reference image.
+
+5. **Análise de Regiões**: Verificação do impacto de diferentes regiões (olhos, boca, etc.) no reconhecimento facial.  
+   **Region Analysis**: Assessing the impact of different facial regions (eyes, mouth, etc.) on face recognition.
 
 ---
 
 ## 📊 Resultados | Results
 
-- A substituição da região dos **olhos** foi a que mais aumentou a similaridade de cosseno.
-- Combinações de múltiplas regiões nem sempre melhoraram os resultados.
-- O alinhamento sem ML mostrou-se possível e instrutivo para entender o impacto anatômico das regiões faciais.
+- A substituição da região dos **olhos** foi a que mais aumentou a similaridade de cosseno.  
+  The substitution of the **eye** region showed the greatest increase in cosine similarity.
+
+- Combinações de múltiplas regiões nem sempre melhoraram os resultados.  
+  Combinations of multiple regions did not always improve results.
+
+- O alinhamento sem ML mostrou-se possível e instrutivo para entender o impacto anatômico das regiões faciais.  
+  Alignment without ML proved feasible and instructive to understand the anatomical impact of facial regions.
 
 ---
 
 ## 📁 Dataset
 
-Utilizou-se um subconjunto manualmente montado com pares de imagens (frontal e perfil) de 50 celebridades, devido a limitações na qualidade das imagens do dataset LFW em tempo de execução.
+Utilizou-se um subconjunto manualmente montado com pares de imagens (frontal e perfil) de 50 celebridades, devido a limitações na qualidade das imagens do dataset LFW em tempo de execução.  
+A manually curated subset with pairs of images (frontal and profile) from 50 celebrities was used, due to runtime quality limitations of the LFW dataset images.
 
----
-
-## 📸 Exemplos Visuais | Visual Examples
-
-(Imagens e gráficos de antes/depois, landmarks e resultados de similaridade podem ser incluídos aqui no repositório.)
-
----
 
 ## 👨‍💻 Autores | Authors
 
